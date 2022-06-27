@@ -15,9 +15,10 @@ Variable value
 Alias: v
 
 .EXAMPLE
-Set-EnvVar -Name "STARSHIP_CONFIG" -Value "N:\git-repos\settings-config-files\starship.toml"
+Set-EnvVar -Name "STARSHIP_CONFIG" -Value "N:\git-repos\settings-config-files\starship\starship.toml"
 #>
 
+<#
 function Set-EnvVar {
     param(
         [Parameter(Mandatory)]
@@ -35,6 +36,7 @@ function Set-EnvVar {
 
     Write-Output "Environment variable $Name set to $Value"
 }
+#>
 
 <#
 .SYNOPSIS
@@ -222,15 +224,16 @@ Set-Alias -Name "gf" -Value "Get-Functions" -Option AllScope -Force
 Set-Alias -Name "sev" -Value "Set-EnvVar" -Option AllScope -Force
 #Set-Alias -Name "ssf" -Value "Set-SystemFont" -Option AllScope -Force
 
-<#
 # Copy settings and config files
-Copy-Item "$env:CMDER_ROOT\config\user_profile.ps1" "$pclouddir\settings-config-files" -Force
+Copy-Item "N:\git-repos\settings-config-files\powershell\user_profile.ps1" "$env:CMDER_ROOT\config\user_profile.ps1" -Force
+
+<#
 Copy-Item "$env:CMDER_ROOT\config\user-ConEmu.xml" "$sync\Settings & Config Files\Cmder" -Force
 Copy-Item "$env:CMDER_ROOT\bin\jacksonPoshTheme.json" "$sync\Settings & Config Files\Cmder" -Force
 #>
 
+# Set environment variables
+$env:STARSHIP_CONFIG = "N:\git-repos\settings-config-files\starship\starship.toml"
+
 # Initialize starship prompt
 Invoke-Expression (&starship init powershell)
-
-# Set environment variables
-#Set-EnvVar -Name "STARSHIP_CONFIG" -Value "N:\git-repos\settings-config-files\starship.toml"
