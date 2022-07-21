@@ -243,11 +243,11 @@ function Install-Programs {
     }
 
     # Voicemeeter Banana
-    Invoke-WebRequest -Uri "https://download.vb-audio.com/Download_CABLE/VoicemeeterProSetup.exe" -OutFile "$scriptpath\vm.exe"
-    Start-Process "$scriptpath\vm.exe"
+    Invoke-WebRequest -Uri "https://download.vb-audio.com/Download_CABLE/VoicemeeterProSetup.exe" -OutFile "C:\vm.exe"
+    Start-Process "C:\vm.exe"
     Pause
 
-    Remove-Item "$scriptpath\vm.exe" -Force
+    Remove-Item "C:\vm.exe" -Force
 
     # Wallpaper-cli
     #npm install --global wallpaper-cli
