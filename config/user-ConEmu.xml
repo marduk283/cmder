@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2022-06-27 02:57:26" build="210912">
+		<key name=".Vanilla" modified="2022-07-27 01:53:23" build="210912">
 			<value name="ColorTable00" type="dword" data="00362a28"/>
 			<value name="ColorTable01" type="dword" data="00f993bd"/>
 			<value name="ColorTable02" type="dword" data="007bfa50"/>
@@ -98,8 +98,8 @@
 			<value name="Multi.SplitWidth" type="hex" data="04"/>
 			<value name="Multi.SplitHeight" type="hex" data="04"/>
 			<value name="KeyboardHooks" type="hex" data="02"/>
-			<value name="FontName" type="string" data="CaskaydiaCove NF"/>
-			<value name="FontName2" type="string" data="FiraCode NF"/>
+			<value name="FontName" type="string" data="JetBrainsMono NF"/>
+			<value name="FontName2" type="string" data="Consolas"/>
 			<value name="FontAutoSize" type="hex" data="00"/>
 			<value name="FontSize" type="ulong" data="16"/>
 			<value name="FontSizeX" type="ulong" data="0"/>
@@ -112,7 +112,7 @@
 			<value name="Monospace" type="hex" data="01"/>
 			<value name="BackGround Image show" type="hex" data="01"/>
 			<value name="BackGround Image" type="string" data="N:\images\Wallpapers\WALLPAPER (317).png"/>
-			<value name="bgImageDarker" type="hex" data="C0"/>
+			<value name="bgImageDarker" type="hex" data="80"/>
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="01"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
@@ -125,10 +125,10 @@
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
 			<value name="ConWnd Width" type="dword" data="00000050"/>
-			<value name="ConWnd Height" type="dword" data="00000014"/>
+			<value name="ConWnd Height" type="dword" data="00000013"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="245"/>
-			<value name="ConWnd Y" type="long" data="195"/>
+			<value name="ConWnd X" type="long" data="644"/>
+			<value name="ConWnd Y" type="long" data="234"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="00"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -494,14 +494,14 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*cmd /k ""%ConEmuDir%\..\init.bat" "'/>
 				</key>
-				<key name="Task2" modified="2022-06-27 02:57:26" build="210912">
+				<key name="Task2" modified="2022-07-26 23:48:28" build="210912">
 					<value name="Name" type="string" data="{bash}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00001232"/>
 					<value name="GuiArgs" type="string" data='-icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='wsl --cd "~"'/>
+					<value name="Cmd1" type="string" data='wsl --cd "/home/jackson"'/>
 				</key>
 				<key name="Task3" modified="2022-06-27 02:57:26" build="210912">
 					<value name="Name" type="string" data="{powershell}"/>
@@ -802,7 +802,7 @@
 			</key>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
 			<value name="DefaultTerminalDebugLog" type="hex" data="00"/>
-			<value name="LastMonitor" type="string" data="0,0,1839,1080"/>
+			<value name="LastMonitor" type="string" data="0,0,1920,1020"/>
 			<value name="Restore2ActiveMon" type="hex" data="01"/>
 			<value name="DownShowExOnTopMessage" type="hex" data="01"/>
 			<value name="Update.InetTool" type="hex" data="00"/>
